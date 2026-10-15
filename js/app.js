@@ -557,12 +557,14 @@
     form.addEventListener('submit', async e => {
       e.preventDefault();
       err.hidden = true;
+      // FormSubmit rejects pages opened straight from a file on your computer (file://).
+      if (location.protocol === 'file:') return fail('This form only sends from the live website, not from a file opened on your computer.');
       btn.disabled = true; $('span', btn).textContent = 'Sending…';
       try {
         const r = await fetch(form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/'), { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
         const j = await r.json().catch(() => ({}));
         if (r.ok && String(j.success) === 'true') { form.reset(); form.hidden = true; sent.hidden = false; }
-        else fail('Your message couldn’t be sent right now.');
+        else fail(j.message ? 'Not sent: ' + j.message : 'Your message couldn’t be sent right now.');
       } catch (x) { fail('Network error: your message wasn’t sent.'); }
       btn.disabled = false; $('span', btn).textContent = 'Send message';
     });

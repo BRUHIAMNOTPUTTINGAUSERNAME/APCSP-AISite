@@ -3,7 +3,10 @@
 body { margin: 0; background: var(--color-bg); }
 a { color: var(--color-accent); }
 a:hover { color: var(--color-accent-400); }
-select.input { appearance: auto; }
+select.input {
+  appearance: none; -webkit-appearance: none; padding-right: 32px; cursor: pointer;
+  background: var(--color-surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 256 256'%3E%3Cpath fill='%23b2b6ca' d='M213.66 101.66l-80 80a8 8 0 0 1-11.32 0l-80-80a8 8 0 0 1 11.32-11.32L128 164.69l74.34-74.35a8 8 0 0 1 11.32 11.32z'/%3E%3C/svg%3E") no-repeat right 10px center;
+}
 [hidden] { display: none !important; }
 
 .page {
