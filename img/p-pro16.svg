@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+<radialGradient id="glow" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#423a6a" stop-opacity=".55"/><stop offset="1" stop-color="#161826" stop-opacity="0"/></radialGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#595d6c"/><stop offset="1" stop-color="#3f424d"/></linearGradient>
+<linearGradient id="deck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#75798c"/><stop offset="1" stop-color="#3f424d"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="#161826"/>
+<rect width="800" height="600" fill="url(#glow)"/>
+<g>
+<ellipse cx="400" cy="482" rx="301.8400000000001" ry="14" fill="#000" opacity=".45"/>
+<rect x="155.0" y="135" width="490" height="305" rx="12" fill="#292b31" stroke="#75798c" stroke-width="2"/>
+<svg x="164.0" y="144" width="472" height="281" viewBox="164.0 144 472 281"><rect x="164.0" y="144" width="472" height="281" rx="4" fill="#1d1f2e"/><rect x="164.0" y="144" width="472" height="281" fill="#1d1f2e"/><rect x="201.8" y="183.34" width="47.2" height="84.3" rx="3" fill="#e06c75"/><rect x="258.4" y="183.34" width="47.2" height="84.3" rx="3" fill="#e5a14f"/><rect x="315.0" y="183.34" width="47.2" height="84.3" rx="3" fill="#e5d46a"/><rect x="371.7" y="183.34" width="47.2" height="84.3" rx="3" fill="#7fc77a"/><rect x="428.3" y="183.34" width="47.2" height="84.3" rx="3" fill="#5fb3d9"/><rect x="485.0" y="183.34" width="47.2" height="84.3" rx="3" fill="#968ae0"/><rect x="541.6" y="183.34" width="47.2" height="84.3" rx="3" fill="#c678dd"/>
+<path d="M201.76 374.41999999999996 L305.6 306.98 L376.4 340.7 L456.64 290.12 L598.24 374.41999999999996Z" fill="#5d5294"/>
+<circle cx="541.6" cy="312.6" r="19.67" fill="#e7e5fe"/></svg>
+<rect x="164.0" y="144" width="472" height="281" rx="3" fill="none" stroke="#000" stroke-opacity=".4"/>
+<path d="M145.19999999999996 440 H654.8000000000001 L674.4000000000001 456 H125.59999999999997Z" fill="url(#deck)"/>
+<rect x="125.59999999999997" y="456" width="548.8000000000001" height="7.2" rx="3" fill="#3f424d"/>
+<rect x="360" y="456" width="80" height="4" rx="2" fill="#292b31"/>
+
+
+</g>
+</svg>

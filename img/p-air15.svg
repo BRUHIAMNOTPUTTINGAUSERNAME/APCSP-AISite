@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<defs>
+<radialGradient id="glow" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#5d5294" stop-opacity=".55"/><stop offset="1" stop-color="#161826" stop-opacity="0"/></radialGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#595d6c"/><stop offset="1" stop-color="#3f424d"/></linearGradient>
+<linearGradient id="deck" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#75798c"/><stop offset="1" stop-color="#3f424d"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="#161826"/>
+<rect width="800" height="600" fill="url(#glow)"/>
+<g>
+<ellipse cx="400" cy="476" rx="289.5200000000001" ry="14" fill="#000" opacity=".45"/>
+<rect x="165.0" y="150" width="470" height="290" rx="12" fill="#292b31" stroke="#75798c" stroke-width="2"/>
+<svg x="173.0" y="158" width="454" height="268" viewBox="173.0 158 454 268"><rect x="173.0" y="158" width="454" height="268" rx="4" fill="#1d1f2e"/><defs><linearGradient id="s" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b2741"/><stop offset=".55" stop-color="#796cbf"/><stop offset="1" stop-color="#d2cefd"/></linearGradient></defs>
+<rect x="173.0" y="158" width="454" height="268" fill="url(#s)"/>
+<path d="M173.0 350.96 C309.2 292.0 445.4 412.6 627.0 318.79999999999995 V426 H173.0Z" fill="#423a6a" opacity=".8"/></svg>
+<rect x="173.0" y="158" width="454" height="268" rx="3" fill="none" stroke="#000" stroke-opacity=".4"/>
+<path d="M155.59999999999997 440 H644.4000000000001 L663.2 450 H136.79999999999995Z" fill="url(#deck)"/>
+<rect x="136.79999999999995" y="450" width="526.4000000000001" height="6" rx="3" fill="#3f424d"/>
+<rect x="360" y="450" width="80" height="4" rx="2" fill="#292b31"/>
+
+
+</g>
+</svg>

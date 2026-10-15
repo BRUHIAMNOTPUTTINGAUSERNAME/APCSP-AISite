@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order confirmation · Voltbook</title>
+<meta name="description" content="Your Voltbook order details.">
+<meta name="theme-color" content="#161826">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voltbook">
+<meta property="og:title" content="Order confirmation · Voltbook">
+<meta property="og:description" content="Your Voltbook order details.">
+<meta property="og:url" content="https://bruhiamnotputtingausername.github.io/APCSP-AISite/order.html">
+<meta property="og:image" content="https://bruhiamnotputtingausername.github.io/APCSP-AISite/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/nocturne.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="vendor/phosphor/regular/style.css">
+<link rel="stylesheet" href="vendor/phosphor/fill/style.css">
+</head>
+<body data-page="order">
+<div class="page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="nav site-nav">
+<a href="index.html" class="nav-brand"><i class="ph-fill ph-lightning brand-bolt"></i>Voltbook</a>
+<div class="nav-panel" id="nav-panel">
+<form class="nav-search" action="shop.html" role="search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input class="input" type="search" name="q" placeholder="Search laptops" aria-label="Search laptops"></form>
+<nav class="nav-links" aria-label="Main">
+<a href="shop.html">Shop</a>
+<a href="compare.html">Compare</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html" class="nav-account" data-when="out"><i class="ph ph-user"></i>Log in</a>
+<a href="account.html" class="nav-account" data-when="in" hidden aria-current="page"><i class="ph ph-user-circle"></i><span data-user-name>Account</span></a>
+</nav>
+</div>
+<a href="cart.html" class="btn btn-primary nav-cart"><i class="ph ph-shopping-cart-simple"></i><span>Cart (<span data-cart-count>0</span>)</span></a>
+<button class="btn btn-icon btn-secondary nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><i class="ph ph-list"></i></button>
+</div>
+</header>
+<main class="site-main" id="main">
+<div id="order-view" hidden>
+<section class="page-head cart-head">
+<span class="crumbs"><a href="index.html">Home</a> / <a href="account.html">Account</a> / Order</span>
+<div id="order-steps"><ol class="steps" aria-label="Checkout progress"><li class="done"><span><i class="ph ph-check"></i></span>Cart</li><li class="done"><span><i class="ph ph-check"></i></span>Shipping</li><li class="on" aria-current="step"><span>3</span>Confirmation</li></ol></div>
+</section>
+<div class="confirm-head">
+<i class="ph ph-check-circle"></i>
+<div><h1 id="o-title">Thanks for your order!</h1><p class="muted">Order <span id="o-id" class="tag tag-accent"></span> placed <span id="o-date"></span>. A copy is saved in <a href="account.html">your account</a>.</p></div>
+</div>
+<div class="cart-layout">
+<div class="cart-main">
+<section class="card elev-sm form-panel"><h2 class="panel-title">Items</h2><ul id="o-items" class="review-items big"></ul></section>
+<div class="two-col">
+<section class="card elev-sm form-panel"><h2 class="panel-title">Shipping to</h2><address id="o-address" class="muted"></address></section>
+<section class="card elev-sm form-panel"><h2 class="panel-title">Delivery</h2><p id="o-method" class="muted"></p><span class="status">Confirmed</span></section>
+</div>
+</div>
+<aside class="card elev-md summary">
+<h2 class="summary-title">Order total</h2>
+<div class="row"><span>Subtotal</span><span id="o-subtotal"></span></div>
+<div class="row"><span>Shipping</span><span id="o-shipping"></span></div>
+<div class="row"><span>Tax (8%)</span><span id="o-tax"></span></div>
+<div class="row total"><span>Total</span><span id="o-total"></span></div>
+<a href="shop.html" class="btn btn-primary btn-block checkout-btn">Keep shopping</a>
+<p class="secure-note">Demo store: nothing ships and nothing was charged.</p>
+</aside>
+</div>
+</div>
+<section id="order-missing" class="missing" hidden><h1>Order not found</h1><p class="muted">Log in to the account that placed this order to see it.</p><a href="account.html" class="btn btn-primary">Go to your account</a></section>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">
+<a href="index.html"><i class="ph-fill ph-lightning brand-bolt"></i>Voltbook</a>
+<span>Laptops only. Tested by us.</span>
+<ul class="footer-perks"><li><i class="ph ph-truck"></i>Free 2‑day shipping</li><li><i class="ph ph-arrow-counter-clockwise"></i>30‑day returns</li><li><i class="ph ph-seal-check"></i>2‑year warranty</li></ul>
+</div>
+<nav class="footer-col" aria-label="Shop">
+<h6>Shop</h6>
+<a href="shop.html">All laptops</a><a href="shop.html?cat=gaming">Gaming</a><a href="shop.html?cat=ultrabook">Ultrabooks</a><a href="shop.html?cat=creator">Creator / Pro</a><a href="shop.html?cat=student">Student</a><a href="shop.html?cat=2in1">2‑in‑1</a><a href="compare.html">Compare laptops</a>
+</nav>
+<nav class="footer-col" aria-label="Help">
+<h6>Help</h6>
+<a href="shipping-returns.html">Shipping &amp; returns</a><a href="warranty.html">Warranty</a><a href="faq.html">FAQ</a><a href="contact.html">Contact us</a>
+</nav>
+<nav class="footer-col" aria-label="Company">
+<h6>Company</h6>
+<a href="about.html">About</a><a href="account.html">Your account</a><a href="cart.html">Cart</a><a href="privacy.html">Privacy</a>
+</nav>
+</div>
+<div class="footer-credits">
+<!-- Fill in the blanks below before you submit. -->
+<span>I built this site in <b>___ hours</b> time.</span>
+<span>I used <b>Claude</b> to build this site.</span>
+<span>It took me <b>___</b> prompts to create this site.</span>
+</div>
+<div class="footer-legal"><span>© 2026 Voltbook · A school project store — no real orders are shipped.</span><span><a href="privacy.html">Privacy</a> · <a href="shipping-returns.html">Returns</a> · <a href="warranty.html">Warranty</a></span></div>
+</footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

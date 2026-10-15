@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout · Voltbook</title>
+<meta name="description" content="Enter your shipping details and place your Voltbook order.">
+<meta name="theme-color" content="#161826">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voltbook">
+<meta property="og:title" content="Checkout · Voltbook">
+<meta property="og:description" content="Enter your shipping details and place your Voltbook order.">
+<meta property="og:url" content="https://bruhiamnotputtingausername.github.io/APCSP-AISite/checkout.html">
+<meta property="og:image" content="https://bruhiamnotputtingausername.github.io/APCSP-AISite/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/nocturne.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="vendor/phosphor/regular/style.css">
+<link rel="stylesheet" href="vendor/phosphor/fill/style.css">
+</head>
+<body data-page="checkout">
+<div class="page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="nav site-nav">
+<a href="index.html" class="nav-brand"><i class="ph-fill ph-lightning brand-bolt"></i>Voltbook</a>
+<div class="nav-panel" id="nav-panel">
+<form class="nav-search" action="shop.html" role="search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input class="input" type="search" name="q" placeholder="Search laptops" aria-label="Search laptops"></form>
+<nav class="nav-links" aria-label="Main">
+<a href="shop.html">Shop</a>
+<a href="compare.html">Compare</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html" class="nav-account" data-when="out"><i class="ph ph-user"></i>Log in</a>
+<a href="account.html" class="nav-account" data-when="in" hidden><i class="ph ph-user-circle"></i><span data-user-name>Account</span></a>
+</nav>
+</div>
+<a href="cart.html" class="btn btn-primary nav-cart" aria-current="page"><i class="ph ph-shopping-cart-simple"></i><span>Cart (<span data-cart-count>0</span>)</span></a>
+<button class="btn btn-icon btn-secondary nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><i class="ph ph-list"></i></button>
+</div>
+</header>
+<main class="site-main" id="main">
+<section class="page-head cart-head">
+<span class="crumbs"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / Checkout</span>
+<div class="cart-title"><h1>Checkout</h1><a href="cart.html" class="continue"><i class="ph ph-arrow-left"></i>Back to cart</a></div>
+<ol class="steps" aria-label="Checkout progress"><li class="done"><span><i class="ph ph-check"></i></span><a href="cart.html">Cart</a></li><li class="on" aria-current="step"><span>2</span>Shipping</li><li class=""><span>3</span>Confirmation</li></ol>
+</section>
+<form id="checkout-form" class="cart-layout" novalidate>
+<div class="cart-main">
+<section class="card elev-sm form-panel" aria-labelledby="ship-h">
+<h2 id="ship-h" class="panel-title"><span class="num">1</span>Shipping address</h2>
+<div class="two-col">
+<div class="field"><label for="s-name">Full name</label><input id="s-name" class="input" name="name" required autocomplete="name"></div>
+<div class="field"><label for="s-phone">Phone <span class="opt">(optional)</span></label><input id="s-phone" class="input" name="phone" type="tel" autocomplete="tel"></div>
+</div>
+<div class="field"><label for="s-addr1">Street address</label><input id="s-addr1" class="input" name="address1" required autocomplete="address-line1"></div>
+<div class="field"><label for="s-addr2">Apartment, suite, etc. <span class="opt">(optional)</span></label><input id="s-addr2" class="input" name="address2" autocomplete="address-line2"></div>
+<div class="three-col">
+<div class="field"><label for="s-city">City</label><input id="s-city" class="input" name="city" required autocomplete="address-level2"></div>
+<div class="field"><label for="s-state">State</label><select id="s-state" class="input" name="state" required autocomplete="address-level1"><option value="">Select…</option><option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option>CA</option><option>CO</option><option>CT</option><option>DE</option><option>DC</option><option>FL</option><option>GA</option><option>HI</option><option>ID</option><option>IL</option><option>IN</option><option>IA</option><option>KS</option><option>KY</option><option>LA</option><option>ME</option><option>MD</option><option>MA</option><option>MI</option><option>MN</option><option>MS</option><option>MO</option><option>MT</option><option>NE</option><option>NV</option><option>NH</option><option>NJ</option><option>NM</option><option>NY</option><option>NC</option><option>ND</option><option>OH</option><option>OK</option><option>OR</option><option>PA</option><option>RI</option><option>SC</option><option>SD</option><option>TN</option><option>TX</option><option>UT</option><option>VT</option><option>VA</option><option>WA</option><option>WV</option><option>WI</option><option>WY</option></select></div>
+<div class="field"><label for="s-zip">ZIP code</label><input id="s-zip" class="input" name="zip" required inputmode="numeric" pattern="[0-9]{5}(-[0-9]{4})?" maxlength="10" autocomplete="postal-code"></div>
+</div>
+</section>
+<section class="card elev-sm form-panel" aria-labelledby="del-h">
+<h2 id="del-h" class="panel-title"><span class="num">2</span>Delivery</h2>
+<div class="ship-options" role="radiogroup" aria-labelledby="del-h">
+<label class="ship-opt"><input type="radio" name="method" value="standard" checked><span class="dot"></span><span class="txt"><b>Standard</b><span id="eta-standard">Arrives in 2 business days</span></span><span class="cost">Free</span></label>
+<label class="ship-opt"><input type="radio" name="method" value="express"><span class="dot"></span><span class="txt"><b>Express</b><span id="eta-express">Arrives next business day</span></span><span class="cost">$19.00</span></label>
+</div>
+</section>
+<section class="card elev-sm form-panel" aria-labelledby="pay-h">
+<h2 id="pay-h" class="panel-title"><span class="num">3</span>Payment</h2>
+<div class="demo-pay"><i class="ph ph-info"></i><p>This is a school project store, so there's no payment step and nothing is charged. Placing an order saves it to your account so you can see it in your order history.</p></div>
+</section>
+<div id="checkout-error" class="tag tag-accent alert" role="alert" hidden><i class="ph ph-warning-circle"></i><span></span></div>
+</div>
+<aside class="card elev-md summary" aria-labelledby="review-h">
+<h2 id="review-h" class="summary-title">Order review</h2>
+<ul id="review-items" class="review-items"></ul>
+<div class="row"><span>Subtotal</span><span id="co-subtotal"></span></div>
+<div class="row"><span>Shipping</span><span id="co-shipping"></span></div>
+<div class="row"><span>Tax (8%)</span><span id="co-tax"></span></div>
+<div class="row total"><span>Total</span><span id="co-total"></span></div>
+<button class="btn btn-primary btn-block checkout-btn" type="submit"><i class="ph ph-lock-simple"></i><span>Place order</span></button>
+<p class="secure-note"><i class="ph ph-shield-check"></i>By placing your order you agree to our <a href="shipping-returns.html">return policy</a>.</p>
+</aside>
+</form>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">
+<a href="index.html"><i class="ph-fill ph-lightning brand-bolt"></i>Voltbook</a>
+<span>Laptops only. Tested by us.</span>
+<ul class="footer-perks"><li><i class="ph ph-truck"></i>Free 2‑day shipping</li><li><i class="ph ph-arrow-counter-clockwise"></i>30‑day returns</li><li><i class="ph ph-seal-check"></i>2‑year warranty</li></ul>
+</div>
+<nav class="footer-col" aria-label="Shop">
+<h6>Shop</h6>
+<a href="shop.html">All laptops</a><a href="shop.html?cat=gaming">Gaming</a><a href="shop.html?cat=ultrabook">Ultrabooks</a><a href="shop.html?cat=creator">Creator / Pro</a><a href="shop.html?cat=student">Student</a><a href="shop.html?cat=2in1">2‑in‑1</a><a href="compare.html">Compare laptops</a>
+</nav>
+<nav class="footer-col" aria-label="Help">
+<h6>Help</h6>
+<a href="shipping-returns.html">Shipping &amp; returns</a><a href="warranty.html">Warranty</a><a href="faq.html">FAQ</a><a href="contact.html">Contact us</a>
+</nav>
+<nav class="footer-col" aria-label="Company">
+<h6>Company</h6>
+<a href="about.html">About</a><a href="account.html">Your account</a><a href="cart.html">Cart</a><a href="privacy.html">Privacy</a>
+</nav>
+</div>
+<div class="footer-credits">
+<!-- Fill in the blanks below before you submit. -->
+<span>I built this site in <b>___ hours</b> time.</span>
+<span>I used <b>Claude</b> to build this site.</span>
+<span>It took me <b>___</b> prompts to create this site.</span>
+</div>
+<div class="footer-legal"><span>© 2026 Voltbook · A school project store — no real orders are shipped.</span><span><a href="privacy.html">Privacy</a> · <a href="shipping-returns.html">Returns</a> · <a href="warranty.html">Warranty</a></span></div>
+</footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

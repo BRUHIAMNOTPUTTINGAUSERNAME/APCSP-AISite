@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your account · Voltbook</title>
+<meta name="description" content="Your Voltbook profile and order history.">
+<meta name="theme-color" content="#161826">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voltbook">
+<meta property="og:title" content="Your account · Voltbook">
+<meta property="og:description" content="Your Voltbook profile and order history.">
+<meta property="og:url" content="https://bruhiamnotputtingausername.github.io/APCSP-AISite/account.html">
+<meta property="og:image" content="https://bruhiamnotputtingausername.github.io/APCSP-AISite/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="css/nocturne.css">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="vendor/phosphor/regular/style.css">
+<link rel="stylesheet" href="vendor/phosphor/fill/style.css">
+</head>
+<body data-page="account">
+<div class="page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="nav site-nav">
+<a href="index.html" class="nav-brand"><i class="ph-fill ph-lightning brand-bolt"></i>Voltbook</a>
+<div class="nav-panel" id="nav-panel">
+<form class="nav-search" action="shop.html" role="search"><i class="ph ph-magnifying-glass" aria-hidden="true"></i><input class="input" type="search" name="q" placeholder="Search laptops" aria-label="Search laptops"></form>
+<nav class="nav-links" aria-label="Main">
+<a href="shop.html">Shop</a>
+<a href="compare.html">Compare</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="login.html" class="nav-account" data-when="out"><i class="ph ph-user"></i>Log in</a>
+<a href="account.html" class="nav-account" data-when="in" hidden aria-current="page"><i class="ph ph-user-circle"></i><span data-user-name>Account</span></a>
+</nav>
+</div>
+<a href="cart.html" class="btn btn-primary nav-cart"><i class="ph ph-shopping-cart-simple"></i><span>Cart (<span data-cart-count>0</span>)</span></a>
+<button class="btn btn-icon btn-secondary nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu"><i class="ph ph-list"></i></button>
+</div>
+</header>
+<main class="site-main" id="main">
+<section class="page-head">
+<span class="crumbs"><a href="index.html">Home</a> / Account</span>
+<h1>Hi, <span data-user-name></span></h1>
+<p class="muted">Manage your account and see your orders.</p>
+</section>
+<div class="account-layout">
+<aside class="card elev-sm form-panel profile">
+<h2 class="panel-title">Profile</h2>
+<dl class="profile-list">
+<div><dt>Name</dt><dd data-user-name></dd></div>
+<div><dt>Email</dt><dd data-user-email></dd></div>
+<div><dt>Member since</dt><dd id="acct-since"></dd></div>
+<div><dt>Saved cart</dt><dd><a href="cart.html" id="acct-cart"></a></dd></div>
+</dl>
+<button class="btn btn-secondary" type="button" data-logout><i class="ph ph-sign-out"></i>Log out</button>
+</aside>
+<section class="card elev-sm orders-panel" aria-labelledby="orders-h">
+<div class="orders-head"><h2 id="orders-h">Order history</h2><span id="orders-sub" class="faint"></span></div>
+<div id="no-orders" class="no-orders" hidden><i class="ph ph-package"></i><p>No orders yet. When you check out, your orders show up here.</p><a href="shop.html" class="btn btn-primary">Start shopping</a></div>
+<div id="orders-table" class="table-scroll"><table class="table orders"><thead><tr><th>Order</th><th>Date</th><th>Items</th><th>Status</th><th>Total</th></tr></thead><tbody id="order-rows"></tbody></table></div>
+</section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div class="footer-brand">
+<a href="index.html"><i class="ph-fill ph-lightning brand-bolt"></i>Voltbook</a>
+<span>Laptops only. Tested by us.</span>
+<ul class="footer-perks"><li><i class="ph ph-truck"></i>Free 2‑day shipping</li><li><i class="ph ph-arrow-counter-clockwise"></i>30‑day returns</li><li><i class="ph ph-seal-check"></i>2‑year warranty</li></ul>
+</div>
+<nav class="footer-col" aria-label="Shop">
+<h6>Shop</h6>
+<a href="shop.html">All laptops</a><a href="shop.html?cat=gaming">Gaming</a><a href="shop.html?cat=ultrabook">Ultrabooks</a><a href="shop.html?cat=creator">Creator / Pro</a><a href="shop.html?cat=student">Student</a><a href="shop.html?cat=2in1">2‑in‑1</a><a href="compare.html">Compare laptops</a>
+</nav>
+<nav class="footer-col" aria-label="Help">
+<h6>Help</h6>
+<a href="shipping-returns.html">Shipping &amp; returns</a><a href="warranty.html">Warranty</a><a href="faq.html">FAQ</a><a href="contact.html">Contact us</a>
+</nav>
+<nav class="footer-col" aria-label="Company">
+<h6>Company</h6>
+<a href="about.html">About</a><a href="account.html">Your account</a><a href="cart.html">Cart</a><a href="privacy.html">Privacy</a>
+</nav>
+</div>
+<div class="footer-credits">
+<!-- Fill in the blanks below before you submit. -->
+<span>I built this site in <b>___ hours</b> time.</span>
+<span>I used <b>Claude</b> to build this site.</span>
+<span>It took me <b>___</b> prompts to create this site.</span>
+</div>
+<div class="footer-legal"><span>© 2026 Voltbook · A school project store — no real orders are shipped.</span><span><a href="privacy.html">Privacy</a> · <a href="shipping-returns.html">Returns</a> · <a href="warranty.html">Warranty</a></span></div>
+</footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
